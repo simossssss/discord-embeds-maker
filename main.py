@@ -87,7 +87,7 @@ async def announcement():
 
                         if (ann_dir / f"{i}-FieldBody").is_file():
                             with open(ann_dir / f"{i}-FieldBody", "r") as f:
-                                fieldBodies.append(f.readline().strip())
+                                fieldBodies.append(f.read().strip())
 
                         if (ann_dir / f"{i}-FieldInline").is_file():
                             with open(ann_dir / f"{i}-FieldInline", "r") as f:
