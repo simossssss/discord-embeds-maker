@@ -59,7 +59,7 @@ async def announcement():
 
                 if (ann_dir / "Description").is_file():
                     with open(ann_dir / "Description") as f:
-                        description = f.readline().strip()
+                        description = f.read().strip()
                         embedFlag = True
 
                 if (ann_dir / "Thumbnail").is_file():
