@@ -36,7 +36,7 @@ async def on_ready():
 async def ping(interaction):
     await interaction.response.send_message(f"Pong! ({round(bot.latency * 1000)} ms)")
 
-@tasks.loop(seconds=10)
+@tasks.loop(minutes=1)
 async def announcement():
     if Path("./count").is_file():
         with open("count", "r") as f:
