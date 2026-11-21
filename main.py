@@ -144,10 +144,3 @@ async def before_announcement():
 
 if __name__=="__main__":
     bot.run(token)
-
-# embeds
-# initialize embed -> embed = discord.embed(title=<title>, url=<url optional>, description=<description maybe optional idk>)
-# embed.set_thumbnail(url=<the url of the image, best to use online images>)
-# embed.set_field(name=<name>, value=<the text it will have>, inline=<true of false, changes how field if categorised>)
-# embed.set_footer(text=<text>)
-# after making it you send it like a normal message with await interaction.response.send_message(embed=embed) must say its an embed
