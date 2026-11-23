@@ -11,7 +11,7 @@ with open("bot_token","r") as f:
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="/", intents=intents)
-channelId = 1541098829896482856
+channelId = #YOUR CHANNEL ID HERE
 
 #for debugging
 def list_dir():
